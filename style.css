@@ -63,3 +63,11 @@ p{
 	image-rendering: crisp-edges;
 	-ms-interpolation-mode: nearest-neighbor;
 }
+.btn {
+	width: 200px;
+	height: 100px;
+	font-size: 30px;
+	color: #000000;
+	background-color: white;
+	border: 5px solid #000000
+}

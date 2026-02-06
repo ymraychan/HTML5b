@@ -10514,12 +10514,25 @@ function draw() {
 // Limits the framerate to 60fps.
 // https://gist.github.com/elundmark/38d3596a883521cb24f5
 // https://stackoverflow.com/questions/19764018/controlling-fps-with-requestanimationframe
+
+
 let fps = 60;
 let now;
 let then = window.performance.now();
 let lastFrameReq = then;
 let interval = 1000 / fps;
 let delta;
+
+function updateFPS() {
+    // 1. Get the value from the input field
+    const inputVal = document.getElementById("fpsInput").value;
+    
+    // 2. Convert string to a number and update game variables
+    fps = parseInt(inputVal);
+    interval = 1000 / fps;
+    
+    console.log(`FPS updated to: ${fps}`);
+}
 
 function rAF60fps() {
 	requestAnimationFrame(rAF60fps);
