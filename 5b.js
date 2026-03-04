@@ -2011,7 +2011,7 @@ let menu2_3ButtonClicked = -1;
 let levelButtonClicked = -1;
 let showingNewGame2 = false;
 
-let musicSound = new Audio(bfdia5b.getItem('fork') + 'data/the fiber 16x loop.wav');
+let musicSound = new Audio(bfdia5b.getItem('fork') + 'data/the fiber 16x loop.mp3');
 // musicSound.addEventListener('canplaythrough', event => {incrementCounter();});
 
 // Creates an image object was a base64 src.
